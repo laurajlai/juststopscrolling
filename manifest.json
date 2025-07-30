@@ -1,10 +1,30 @@
 {
-  "name": "Hello Extensions",
-  "description": "Base Level Extension",
+  "name": "Just Stop Scrolling",
+  "description": "JSS helps you increase your productivity by stopping you from endlessly scrolling sites.",
+
+  "icons": 
+  {
+    "16": "images/jss_16.png",
+    "32": "images/jss_32.png",
+    "48": "images/jss_48.png",
+    "128": "images/jss_128.png"
+  },
+
   "version": "1.0",
   "manifest_version": 3,
-  "action": {
+  "action": 
+  {
     "default_popup": "index.html",
-    "default_icon": "jss_icon.png"
-  }
+    "default_icon": "images/jss_icon.png"
+  },
+
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://developer.chrome.com/docs/extensions/*",
+        "https://developer.chrome.com/docs/webstore/*"
+      ]
+    }
+  ]
 }

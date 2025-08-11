@@ -1,0 +1,14 @@
+html
+{
+    width: 600px; 
+    height: 400px; /* max: 600px */
+    background-color: #80d190;
+    font-size: 20px;
+}
+
+a:link,a:visited
+{
+  color:#005a23;
+  text-decoration: none;
+  background-color:transparent;
+}

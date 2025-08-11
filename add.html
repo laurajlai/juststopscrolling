@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Add a New Block</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="popup/popup.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <h1>Add a New Block</h1>
+  <p>
+    Take back control of your Internet habits today. 
+  </p>
+  <form id = "adding-block">
+      Enter the URL of the site or the specific word(s) you want to block: <br><br>
+  <input type="text" name="url" value="" size="70"> <br><br>
+      Would you like a soft block or a hard block? 
+
+      <br>
+
+     A soft block provides a popup when you reach your time limit. After clearing the prompt, you can continue browsing. However, a hard block blocks access to the site after reaching your block limit. <br><br>
+
+    <input type="radio" id="softblock" name="block" value="softblock">
+    <label for="html">Soft Block</label><br>
+    <input type="radio" id="hardblock" name="block" value="hardblock">
+    <label for="html">Hard Block</label><br>
+      <br>
+      How long is this block? You can specify a time limit or a set number of viewings. 
+      <br><br>
+    <input type="number" id="hours" name="time" min="0" max="24" step = "1"/> hours
+    <input type="number" id="minutes" name="time" min="1" max="59" step = "1"/> minutes
+
+    <br><br>
+
+      <input type="button" name="button" value="Add" onClick="testResults(this.form)">
+  <input type="button" name="button" value="Cancel" onClick="testResults(this.form)">
+  </form>
+
+  <script src="popup/popup.js"></script>
+  <br><br>
+</body>
+</html>
